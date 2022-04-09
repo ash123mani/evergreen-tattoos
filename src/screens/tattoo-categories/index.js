@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
 
-import LandingSection from './landing-section'
-import { Main } from './styles'
+import LandingSection from "./landing-section";
+import TattooCategories from "./category-cards";
+import { Main } from "./styles";
 
-const TattooCategoriesPage = () => {
+const TattooCategoriesPage = ({ pageData }) => {
   return (
     <Main>
       <LandingSection />
+      <TattooCategories
+        pageData={pageData} 
+      />
     </Main>
-  )
-}
+  );
+};
 
-export default TattooCategoriesPage
+export default TattooCategoriesPage;

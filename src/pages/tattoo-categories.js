@@ -1,13 +1,36 @@
 import React, { Fragment } from 'react'
+import { graphql } from 'gatsby'
 
 import TattooCategoriesPage from '../screens/tattoo-categories'
 
-const TattooCategories = () => {
+const TattooCategories = ({ data }) => {
+  const { allContentfulTattooCategories: { nodes = []} } = data
   return (
     <Fragment>
-      <TattooCategoriesPage />
+      <title>Tattoo Catgeories</title>
+      <TattooCategoriesPage
+        pageData={nodes}
+      />
     </Fragment>
   )
 }
+
+export const query = graphql`
+  query TattooCategories {
+    allContentfulTattooCategories {
+      nodes {
+        id
+        categoryName
+        categoryImage {
+          gatsbyImageData
+        }
+        categoryPageLink {
+          title
+          description
+        }
+      }
+    }
+  }
+`
 
 export default TattooCategories

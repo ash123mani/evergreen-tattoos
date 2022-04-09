@@ -18,8 +18,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   &::selection {
-    color: white;
-    background-color: black;
+    color: var(--eg-dark-white);
+    background-color: var(--eg-dark-black);
   }
 
   html, body {

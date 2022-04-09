@@ -17,7 +17,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          placeholder: `dominantColor`,
+          quality: 50,
+          backgroundColor: `transparent`,
+        }
+      }
+    },
     `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-source-contentful`,

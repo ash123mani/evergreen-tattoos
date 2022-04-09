@@ -1,12 +1,7 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { css } from 'styled-components'
 
 import { Link } from "gatsby";
-
-const csss = css`
-  /* filter: invert(100%); */
-`
 
 const Logo = () => {
   return (

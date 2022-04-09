@@ -9,7 +9,7 @@ export const ImageWrapper = styled.div`
     height: 100vh;
     width: 200px;
     filter: grayscale(1);
-    border-right: 2px solid white;
+    border-right: 2px solid var(--eg-dark-white);
     transition: all 0.3s linear;
 
     &:hover {

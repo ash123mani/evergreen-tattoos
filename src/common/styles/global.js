@@ -2,10 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyleVars = createGlobalStyle`
   :root {
-    --dark-black: #000;
-    --medium-black: #08151d;
+    --eg-dark-black: #000;
+    --eg-medium-black: #08151d;
 
-    --dark-white: #fff;
+    --eg-dark-white: #fff;
   }
 `
 

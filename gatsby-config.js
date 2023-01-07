@@ -1,3 +1,5 @@
+console.log("process.env.CONTENTFUL_SPACE_ID ", process.env.CONTENTFUL_SPACE_ID )
+console.log("process.env.CONTENTFUL_ACCESS_TOKEN ", process.env.CONTENTFUL_ACCESS_TOKEN )
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
@@ -31,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '9n26ii2jl04i',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || 'ZCqEqIsgTQNALqyXNZ4hPPfU4zVAQELn5NRMKvmbJAc',
       },
     },
     {

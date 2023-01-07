@@ -4,7 +4,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   margin-bottom: 24px;
   border-top: 1px solid #000000bd;
-  border-bottom: 1px solid #000000bd;
+  border-bottom: 1px solid #6a6464d4;
   color: #fff;
 
   ${({ type }) => {
@@ -20,8 +20,9 @@ export const Heading = styled.h1`
     return (
       category === "subtitle" &&
       css`
-        font-size: 22px;
-        font-weight: 500;
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffffba;
       `
     );
   }}

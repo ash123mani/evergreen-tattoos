@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 
+import { mediaQueries } from '../../../utils/responsive'
+
 export const Nav = styled.nav`
   height: calc(100vh - 40px);
   position: sticky;
@@ -10,10 +12,19 @@ export const Nav = styled.nav`
   top: 0px;
   justify-content: space-between;
   align-items: center;
+  height: 100vh;
   /* border-left: 1px solid #000000bd;
   border-right: 1px solid #000000bd; */
   a:first-child {
     margin-bottom: auto;
+  };
+
+  @media ${mediaQueries['large-down']} {
+    padding: 80px 40px;
+  };
+
+  @media ${mediaQueries['medium-down']} {
+    padding: 80px 4px;
   };
 `
 

@@ -24,10 +24,6 @@ export const query = graphql`
         categoryImage {
           gatsbyImageData
         }
-        categoryPageLink {
-          title
-          description
-        }
       }
     }
   }

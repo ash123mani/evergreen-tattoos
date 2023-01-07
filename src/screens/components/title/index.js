@@ -5,7 +5,7 @@ import { Heading } from "./styles";
 
 const Title = ({ title, as, type, category, ...rest }) => {
   return (
-    <Heading as={as} type={type} category={category} {...rest}>
+    <Heading as={type==="subtitle" ? "h2" : as} type={type} category={category} {...rest}>
       {title}
     </Heading>
   );

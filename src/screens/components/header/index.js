@@ -9,7 +9,6 @@ const Header = () => {
       <Logo />
       <NavLink to="/" isCurrent>Home</NavLink>
       <NavLink to="/tattoo-categories" isCurrent>Tattoos</NavLink>
-      <NavLink to="/b" isCurrent>Hampi</NavLink>
       <NavLink to="/s" isCurrent>Contact</NavLink>
     </Nav>
   )

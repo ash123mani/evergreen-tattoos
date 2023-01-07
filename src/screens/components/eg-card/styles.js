@@ -20,13 +20,13 @@ const titleStyles = css`
 
 export const EGCardContainer = styled.div`
   padding: 12px 12px;
-  width: 448px;
   border-radius: 4px;
   border: 1px solid #ffffff87;
+  max-width: 432px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--eg-dark-black);
+  /* background: var(--eg-dark-black); */
   margin: 0 auto;
   ${containerStyles};
   /* box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85); */

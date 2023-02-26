@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
       <GlobalStyleVars />
       <ResetStyles />
       <Wrapper>
-        <Header />
         {children}
+        <Header />
       </Wrapper>
     </Fragment>
   )

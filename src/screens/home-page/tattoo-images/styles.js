@@ -11,7 +11,7 @@ export const ImagesContainer = styled.div`
 
   @media ${mediaQueries['large-down']} {
     flex-direction: column-reverse;
-    padding: 120px 40px;
+    padding: 60px 12px;
     row-gap: 40px;
   }
 `
@@ -22,7 +22,7 @@ export const ImageWrapper = styled.div`
     height: 100vh;
     width: 200px;
     filter: grayscale(1);
-    border-right: 2px solid var(--eg-dark-white);
+    border-right: 1px solid var(--eg-dark-black);
     transition: all 0.2s linear;
 
     &:hover {
@@ -30,8 +30,5 @@ export const ImageWrapper = styled.div`
       filter: grayscale(0);
     }
   }
-  }
-
-  @media ${mediaQueries['large-up']} {
   }
 `

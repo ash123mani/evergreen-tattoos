@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import { mediaQueries } from '../../../utils/responsive'
+
 export const Heading = styled.h1`
   font-size: 48px;
   margin-bottom: 24px;
@@ -26,4 +28,16 @@ export const Heading = styled.h1`
       `
     );
   }}
+
+  @media ${mediaQueries['medium-down']} {
+    font-size: 32px;
+    ${({ category }) => {
+    return (
+      category === "subtitle" &&
+      css`
+        font-size: 18px;
+      `
+    );
+  }}
+  }
 `;

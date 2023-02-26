@@ -8,15 +8,10 @@ export const Main = styled.main`
   display: inline-flex;
   min-height: 100vh;
   overflow: auto;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 50%));
-  gap: 40px;
-  grid-template-columns: 50% 50%; */
-    /* grid-auto-flow: row; */
 
   @media ${mediaQueries['large-down']} {
     flex-direction: column-reverse;
-    padding: 120px 40px;
+    padding: 60px 40px;
   }
 `
 
@@ -28,4 +23,9 @@ export const Bottom = styled.div`
   min-width: 300px;
   padding: 0 20px;
   text-align: center;
+
+  @media ${mediaQueries['medium-down']} {
+    height: 100vh;
+    padding: 0;
+  }
 `

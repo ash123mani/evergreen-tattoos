@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 
+import { mediaQueries } from '../../../utils/responsive'
+
 const theme = window !== undefined && window.localStorage.getItem('theme');
 
 const containerStyles = css`
@@ -26,10 +28,8 @@ export const EGCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background: var(--eg-dark-black); */
   margin: 0 auto;
   ${containerStyles};
-  /* box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85); */
 `
 
 export const Title = styled.h3`
@@ -38,12 +38,17 @@ export const Title = styled.h3`
   text-align: center;
   padding: 24px 0 12px;
   ${titleStyles};
+
+  @media ${mediaQueries['medium-down']} {
+    font-size: 24px;
+  };
 `
 
 export const Description = styled.h4`
   font-size: 20px;
   padding: 24px 12px 12px;
-  color: var(--eg-dark-white);
+  color: #ffffff87;
   text-align: center;
   font-weight: 400;
+  border-top: 1px solid #ffffff87;
 `

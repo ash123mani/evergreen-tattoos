@@ -5,7 +5,7 @@ const GlobalStyleVars = createGlobalStyle`
     --eg-dark-black: #000;
     --eg-medium-black: #08151d;
 
-    --eg-dark-white: #fff;
+    --eg-dark-white: #ffffff87;
   }
 `
 

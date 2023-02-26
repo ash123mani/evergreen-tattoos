@@ -1,8 +1,8 @@
 import React from "react"
 
-import { Main } from "./styles"
 import CategoryDetails from "./category-details"
 import CategoryListing from "./category-listing"
+import Main from "../components/main";
 
 const TattooCategoryDetails = ({ categoryName, description, tattooCategoryImages, slug }) => {
   return (

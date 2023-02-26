@@ -19,7 +19,7 @@ const titleStyles = css`
 `
 
 export const EGCardContainer = styled.div`
-  padding: 12px 12px;
+  /* padding: 12px 12px; */
   border-radius: 4px;
   border: 1px solid #ffffff87;
   max-width: 432px;
@@ -36,6 +36,14 @@ export const Title = styled.h3`
   font-size: 32px;
   color: var(--eg-dark-white);
   text-align: center;
-  margin: 24px 0 12px;
+  padding: 24px 0 12px;
   ${titleStyles};
+`
+
+export const Description = styled.h4`
+  font-size: 20px;
+  padding: 24px 12px 12px;
+  color: var(--eg-dark-white);
+  text-align: center;
+  font-weight: 400;
 `

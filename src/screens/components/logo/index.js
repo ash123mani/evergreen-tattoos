@@ -11,11 +11,11 @@ const Logo = () => {
         layout="fixed"
         src="../../../images/eg-logo.jpg"
         alt="EverGreen Tattoo logo"
-        height={180}
+        height={72}
         loading="eager"
-        transformOptions={
-          { fit: "contain" }
-        }
+        // transformOptions={
+        //   { fit: "contain" }
+        // }
         style={{
           // filter: 'invert(100%)'
         }}

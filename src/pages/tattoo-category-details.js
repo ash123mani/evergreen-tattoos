@@ -25,6 +25,7 @@ export const query = graphql`
       }
       tattooCategoryImages {
         gatsbyImageData
+        description
       }
     }
   }

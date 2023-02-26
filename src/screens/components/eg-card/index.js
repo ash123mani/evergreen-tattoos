@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { string, boolean } from "prop-types"
 
-import { EGCardContainer, Title } from "./styles"
+import { EGCardContainer, Title, Description } from "./styles"
 
-const EGCard = ({ title, image, globTheme, asLink, link }) => {
+const EGCard = ({ title, description, image, globTheme, asLink, link }) => {
   const renderContainer = () => {
     return (
       <EGCardContainer globTheme={globTheme}>
@@ -24,7 +24,8 @@ const EGCard = ({ title, image, globTheme, asLink, link }) => {
             flex: "1",
           }}
         />
-        <Title>{title}</Title>
+        {title && <Title>{title}</Title>}
+        {description && <Description>{description}</Description>}
       </EGCardContainer>
     )
   }
@@ -39,13 +40,15 @@ const EGCard = ({ title, image, globTheme, asLink, link }) => {
 EGCard.propTypes = {
   title: string,
   asLink: boolean,
-  link: string
+  link: string,
+  description: string
 }
 
 EGCard.defaultProps = {
   title: "",
   asLink: false,
-  link: ''
+  link: '',
+  description: ''
 }
 
 export default EGCard

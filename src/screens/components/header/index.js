@@ -6,7 +6,7 @@ import { Nav, NavLink, NavContainer } from './styles'
 const Header = () => {
   return (
     <Nav>
-      <Logo />
+      {/* <Logo /> */}
       <NavLink to="/" isCurrent>Home</NavLink>
       <NavLink to="/tattoo-categories" isCurrent>Tattoos</NavLink>
       <NavLink to="/s" isCurrent>Contact</NavLink>

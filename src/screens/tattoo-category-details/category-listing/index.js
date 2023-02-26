@@ -7,8 +7,10 @@ const CategoryListing = ({ tattooCategoryImages }) => {
     return (
         <CategoryCards>
           {tattooCategoryImages.map((image) => {
+            console.log("image", image)
+            const { description } = image
             // const { categoryName, categoryImage, id } = category
-            return  <EGCard  image={image}  />
+            return  <EGCard  image={image}  description={description} />
           })}
         </CategoryCards>
    );

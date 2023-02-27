@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const categoryDetailsPage = path.resolve(
-    "./src/pages/tattoo-category-details.js"
+    "./src/templates/tattoo-category-details.js"
   )
 
   const result = await graphql(`

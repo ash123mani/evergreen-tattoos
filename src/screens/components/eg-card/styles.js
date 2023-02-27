@@ -2,23 +2,6 @@ import styled, { css } from 'styled-components'
 
 import { mediaQueries } from '../../../utils/responsive'
 
-const theme = window !== undefined && window.localStorage.getItem('theme');
-
-const containerStyles = css`
-  background-color: ${({ globTheme }) => {
-    if(theme === 'light' || globTheme === 'light') {
-      return 'var(--eg-dark-white)'
-    }
-  }};
-`
-
-const titleStyles = css`
-  color: ${({ globTheme }) => {
-    if(theme === 'light' || globTheme === 'light') {
-      return 'var(--eg-dark-black)'
-    }
-  }};
-`
 
 export const EGCardContainer = styled.div`
   /* padding: 12px 12px; */

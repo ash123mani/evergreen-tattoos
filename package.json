@@ -29,5 +29,8 @@
     "react-slick": "^0.28.1",
     "styled-components": "^5.3.3",
     "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "gatsby-plugin-netlify": "^5.1.0"
   }
 }
